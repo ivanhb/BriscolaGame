@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xro-aZ-zUR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Init View Controller-->
+        <scene sceneID="j9Z-pQ-Ldf">
+            <objects>
+                <viewController id="RdX-8i-xli" customClass="initViewController" customModule="BriscolaGame" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lOe-Xy-ClL"/>
+                        <viewControllerLayoutGuide type="bottom" id="jln-9F-Yhz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0UM-pU-tzf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1U-IG-sQo">
+                                <rect key="frame" x="97" y="171" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oay-zI-lUL">
+                                <rect key="frame" x="97" y="250" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Agent Memory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iy-7M-bcy">
+                                <rect key="frame" x="97" y="337" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cheating Factor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEk-K8-YjZ">
+                                <rect key="frame" x="97" y="417" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XMK-NF-r6Y">
+                                <rect key="frame" x="97" y="200" width="161" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="1" maxValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="77H-ey-MDP">
+                                <rect key="frame" x="95" y="271" width="152" height="31"/>
+                                <color key="tintColor" red="1" green="0.20368656913155481" blue="0.1674322264958189" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="slideSpeed:" destination="RdX-8i-xli" eventType="valueChanged" id="cPn-II-oeD"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="5" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="EYY-XK-fZM">
+                                <rect key="frame" x="95" y="359" width="152" height="31"/>
+                                <color key="tintColor" red="1" green="0.20368656909999999" blue="0.1674322265" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="slideMemory:" destination="RdX-8i-xli" eventType="valueChanged" id="8hi-2m-eW8"/>
+                                    <action selector="slideSpeed:" destination="RdX-8i-xli" eventType="valueChanged" id="7du-bo-4p7"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="TgR-XF-V19">
+                                <rect key="frame" x="95" y="446" width="152" height="31"/>
+                                <color key="tintColor" red="1" green="0.20368656909999999" blue="0.1674322265" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="slideCheat:" destination="RdX-8i-xli" eventType="valueChanged" id="biS-Si-zbk"/>
+                                    <action selector="slideMemory:" destination="RdX-8i-xli" eventType="valueChanged" id="Bfu-3L-Yvt"/>
+                                    <action selector="slideSpeed:" destination="RdX-8i-xli" eventType="valueChanged" id="0If-Cs-N2Q"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPC-se-4qE">
+                                <rect key="frame" x="119" y="531" width="116" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="1" green="0.20368656909999999" blue="0.1674322265" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickStart:" destination="RdX-8i-xli" eventType="touchUpInside" id="ssm-1R-Kde"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brain-512" translatesAutoresizingMaskIntoConstraints="NO" id="1tI-3u-kvr">
+                                <rect key="frame" x="253" y="337" width="72" height="72"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angel" translatesAutoresizingMaskIntoConstraints="NO" id="PHj-f4-8yA">
+                                <rect key="frame" x="253" y="417" width="72" height="72"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="walk" translatesAutoresizingMaskIntoConstraints="NO" id="dmu-9A-r9c">
+                                <rect key="frame" x="253" y="250" width="72" height="72"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hdO-O1-Gaz">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="agentMemory" destination="EYY-XK-fZM" id="lqf-VA-RwL"/>
+                        <outlet property="cheatImg" destination="PHj-f4-8yA" id="YZH-Qw-xeo"/>
+                        <outlet property="cheatSlider" destination="TgR-XF-V19" id="Qdw-ca-7hx"/>
+                        <outlet property="gameSpeed" destination="77H-ey-MDP" id="N1S-8s-y5h"/>
+                        <outlet property="memoryImg" destination="1tI-3u-kvr" id="5zn-pm-AUa"/>
+                        <outlet property="playerName" destination="XMK-NF-r6Y" id="wl3-Pr-zhK"/>
+                        <outlet property="speedImg" destination="dmu-9A-r9c" id="NPv-yd-tIR"/>
+                        <outlet property="startGameBtn" destination="cPC-se-4qE" id="7Lu-fK-JrI"/>
+                        <segue destination="LVB-YS-i5n" kind="show" identifier="segue" id="gH0-3L-hoZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xsb-9N-K2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="576.5" y="319.5"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LVB-YS-i5n" customClass="GameViewController" customModule="BriscolaGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lKe-AT-kWC"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1032.5" y="319.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EaZ-IO-1va">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xro-aZ-zUR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z23-hg-kqT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RdX-8i-xli" kind="relationship" relationship="rootViewController" id="4Hl-CA-vS7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAk-sf-ADI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122.5" y="319.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="angel" width="512" height="512"/>
+        <image name="brain-512" width="512" height="512"/>
+        <image name="walk" width="240" height="299"/>
+    </resources>
+</document>

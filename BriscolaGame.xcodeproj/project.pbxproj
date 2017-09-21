@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A3EB0871BA9E00000F82365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3EB0851BA9E00000F82365 /* Main.storyboard */; };
+		5AC58D401BA1B3CB00CB5C9D /* ComputerMind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC58D3F1BA1B3CB00CB5C9D /* ComputerMind.swift */; };
+		5AC8E5591BA628B30093593B /* initViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8E5581BA628B30093593B /* initViewController.swift */; };
+		5AC9DD8B1B9F2EC600E4546A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9DD8A1B9F2EC600E4546A /* AppDelegate.swift */; };
+		5AC9DD8F1B9F2EC600E4546A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9DD8E1B9F2EC600E4546A /* GameScene.swift */; };
+		5AC9DD911B9F2EC600E4546A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9DD901B9F2EC600E4546A /* GameViewController.swift */; };
+		5AC9DD961B9F2EC600E4546A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC9DD951B9F2EC600E4546A /* Images.xcassets */; };
+		5AC9DD991B9F2EC600E4546A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AC9DD971B9F2EC600E4546A /* LaunchScreen.xib */; };
+		5AC9DDA51B9F2EC600E4546A /* BriscolaGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9DDA41B9F2EC600E4546A /* BriscolaGameTests.swift */; };
+		5AC9DDB11B9F44C800E4546A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9DDB01B9F44C800E4546A /* Card.swift */; };
+		5AC9DDB91BA09BAF00E4546A /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9DDB81BA09BAF00E4546A /* Table.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AC9DD9F1B9F2EC600E4546A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AC9DD7D1B9F2EC600E4546A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AC9DD841B9F2EC600E4546A;
+			remoteInfo = BriscolaGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A3EB0861BA9E00000F82365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AC58D3F1BA1B3CB00CB5C9D /* ComputerMind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerMind.swift; sourceTree = "<group>"; };
+		5AC8E5581BA628B30093593B /* initViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = initViewController.swift; sourceTree = "<group>"; };
+		5AC9DD851B9F2EC600E4546A /* BriscolaGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BriscolaGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC9DD891B9F2EC600E4546A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AC9DD8A1B9F2EC600E4546A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5AC9DD8E1B9F2EC600E4546A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5AC9DD901B9F2EC600E4546A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5AC9DD951B9F2EC600E4546A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5AC9DD981B9F2EC600E4546A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5AC9DD9E1B9F2EC600E4546A /* BriscolaGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BriscolaGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC9DDA31B9F2EC600E4546A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AC9DDA41B9F2EC600E4546A /* BriscolaGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriscolaGameTests.swift; sourceTree = "<group>"; };
+		5AC9DDB01B9F44C800E4546A /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5AC9DDB81BA09BAF00E4546A /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AC9DD821B9F2EC600E4546A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AC9DD9B1B9F2EC600E4546A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AC9DD7C1B9F2EC600E4546A = {
+			isa = PBXGroup;
+			children = (
+				5AC9DD871B9F2EC600E4546A /* BriscolaGame */,
+				5AC9DDA11B9F2EC600E4546A /* BriscolaGameTests */,
+				5AC9DD861B9F2EC600E4546A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AC9DD861B9F2EC600E4546A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AC9DD851B9F2EC600E4546A /* BriscolaGame.app */,
+				5AC9DD9E1B9F2EC600E4546A /* BriscolaGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AC9DD871B9F2EC600E4546A /* BriscolaGame */ = {
+			isa = PBXGroup;
+			children = (
+				5AC9DD8A1B9F2EC600E4546A /* AppDelegate.swift */,
+				5AC9DD8E1B9F2EC600E4546A /* GameScene.swift */,
+				5AC9DD901B9F2EC600E4546A /* GameViewController.swift */,
+				5A3EB0851BA9E00000F82365 /* Main.storyboard */,
+				5AC9DD951B9F2EC600E4546A /* Images.xcassets */,
+				5AC9DD971B9F2EC600E4546A /* LaunchScreen.xib */,
+				5AC9DD881B9F2EC600E4546A /* Supporting Files */,
+				5AC9DDB01B9F44C800E4546A /* Card.swift */,
+				5AC9DDB81BA09BAF00E4546A /* Table.swift */,
+				5AC58D3F1BA1B3CB00CB5C9D /* ComputerMind.swift */,
+				5AC8E5581BA628B30093593B /* initViewController.swift */,
+			);
+			path = BriscolaGame;
+			sourceTree = "<group>";
+		};
+		5AC9DD881B9F2EC600E4546A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AC9DD891B9F2EC600E4546A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AC9DDA11B9F2EC600E4546A /* BriscolaGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AC9DDA41B9F2EC600E4546A /* BriscolaGameTests.swift */,
+				5AC9DDA21B9F2EC600E4546A /* Supporting Files */,
+			);
+			path = BriscolaGameTests;
+			sourceTree = "<group>";
+		};
+		5AC9DDA21B9F2EC600E4546A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AC9DDA31B9F2EC600E4546A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AC9DD841B9F2EC600E4546A /* BriscolaGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AC9DDA81B9F2EC600E4546A /* Build configuration list for PBXNativeTarget "BriscolaGame" */;
+			buildPhases = (
+				5AC9DD811B9F2EC600E4546A /* Sources */,
+				5AC9DD821B9F2EC600E4546A /* Frameworks */,
+				5AC9DD831B9F2EC600E4546A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BriscolaGame;
+			productName = BriscolaGame;
+			productReference = 5AC9DD851B9F2EC600E4546A /* BriscolaGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AC9DD9D1B9F2EC600E4546A /* BriscolaGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AC9DDAB1B9F2EC600E4546A /* Build configuration list for PBXNativeTarget "BriscolaGameTests" */;
+			buildPhases = (
+				5AC9DD9A1B9F2EC600E4546A /* Sources */,
+				5AC9DD9B1B9F2EC600E4546A /* Frameworks */,
+				5AC9DD9C1B9F2EC600E4546A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AC9DDA01B9F2EC600E4546A /* PBXTargetDependency */,
+			);
+			name = BriscolaGameTests;
+			productName = BriscolaGameTests;
+			productReference = 5AC9DD9E1B9F2EC600E4546A /* BriscolaGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AC9DD7D1B9F2EC600E4546A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Ivan Heibi";
+				TargetAttributes = {
+					5AC9DD841B9F2EC600E4546A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					5AC9DD9D1B9F2EC600E4546A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 5AC9DD841B9F2EC600E4546A;
+					};
+				};
+			};
+			buildConfigurationList = 5AC9DD801B9F2EC600E4546A /* Build configuration list for PBXProject "BriscolaGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AC9DD7C1B9F2EC600E4546A;
+			productRefGroup = 5AC9DD861B9F2EC600E4546A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AC9DD841B9F2EC600E4546A /* BriscolaGame */,
+				5AC9DD9D1B9F2EC600E4546A /* BriscolaGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AC9DD831B9F2EC600E4546A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3EB0871BA9E00000F82365 /* Main.storyboard in Resources */,
+				5AC9DD991B9F2EC600E4546A /* LaunchScreen.xib in Resources */,
+				5AC9DD961B9F2EC600E4546A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AC9DD9C1B9F2EC600E4546A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AC9DD811B9F2EC600E4546A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC9DD8F1B9F2EC600E4546A /* GameScene.swift in Sources */,
+				5AC9DDB91BA09BAF00E4546A /* Table.swift in Sources */,
+				5AC58D401BA1B3CB00CB5C9D /* ComputerMind.swift in Sources */,
+				5AC8E5591BA628B30093593B /* initViewController.swift in Sources */,
+				5AC9DD911B9F2EC600E4546A /* GameViewController.swift in Sources */,
+				5AC9DD8B1B9F2EC600E4546A /* AppDelegate.swift in Sources */,
+				5AC9DDB11B9F44C800E4546A /* Card.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AC9DD9A1B9F2EC600E4546A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC9DDA51B9F2EC600E4546A /* BriscolaGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AC9DDA01B9F2EC600E4546A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AC9DD841B9F2EC600E4546A /* BriscolaGame */;
+			targetProxy = 5AC9DD9F1B9F2EC600E4546A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A3EB0851BA9E00000F82365 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A3EB0861BA9E00000F82365 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5AC9DD971B9F2EC600E4546A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AC9DD981B9F2EC600E4546A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AC9DDA61B9F2EC600E4546A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5AC9DDA71B9F2EC600E4546A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AC9DDA91B9F2EC600E4546A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BriscolaGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5AC9DDAA1B9F2EC600E4546A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BriscolaGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5AC9DDAC1B9F2EC600E4546A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BriscolaGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BriscolaGame.app/BriscolaGame";
+			};
+			name = Debug;
+		};
+		5AC9DDAD1B9F2EC600E4546A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BriscolaGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BriscolaGame.app/BriscolaGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AC9DD801B9F2EC600E4546A /* Build configuration list for PBXProject "BriscolaGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AC9DDA61B9F2EC600E4546A /* Debug */,
+				5AC9DDA71B9F2EC600E4546A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AC9DDA81B9F2EC600E4546A /* Build configuration list for PBXNativeTarget "BriscolaGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AC9DDA91B9F2EC600E4546A /* Debug */,
+				5AC9DDAA1B9F2EC600E4546A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AC9DDAB1B9F2EC600E4546A /* Build configuration list for PBXNativeTarget "BriscolaGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AC9DDAC1B9F2EC600E4546A /* Debug */,
+				5AC9DDAD1B9F2EC600E4546A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AC9DD7D1B9F2EC600E4546A /* Project object */;
+}
